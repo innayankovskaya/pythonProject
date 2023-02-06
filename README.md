@@ -12,18 +12,18 @@
 с использованием стандартных фигур (круг, квадрат и т.д) По-другому это еще называется "черепашья графика" 
 Надеюь, моя для первого раза простая игра "Змейка" вам понравилась.
 
-#Переменные WIDTH , HEIGHT -размеры нашего поля, SEG_Size- размер змейки.
+# Переменные WIDTH , HEIGHT -размеры нашего поля, SEG_Size- размер змейки.
 
-Яблоко
+# Яблоко
 BLOCK = c.create_oval(posx, posy, posx+SEG_SIZE, posy+SEG_SIZE, fill="red")
 
-Проверка на столкновение
+# Проверка на столкновение
 if x2 > WIDTH or x1 < 0 or y1 < 0 or y2 > HEIGHT: IN_GAME = False
 
-Есть яблоки
+# Есть яблоки
     elif head_coords == c.coords(BLOCK):
         s.add_segment()
         c.delete(BLOCK)
         create_block()            
-При проигрыше
+# При проигрыше
 'Click here to restart'
